@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Delete Account</h1>
+    <p><b>username:</b>  <%= del.username %> </p>
+
+    <p> <%= del.password %> </p>
+    <form action="/user/<%=del.id%>/delete?_method=DELETE" method="post">
+        <input type="password" name="password" placeholder="Enter password">
+        <button style="background-color: red;">DELETE</button>
+    </form>
+    
+</body>
+</html>
